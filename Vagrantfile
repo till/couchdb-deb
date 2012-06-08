@@ -2,7 +2,9 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
+
   config.vm.box = "lucid64"
+  config.vm.network :hostonly, "133.0.0.108"
 
   #config.vm.boot_mode = :gui
 
