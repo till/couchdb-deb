@@ -1,0 +1,49 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S
+dpkg-buildpackage: set CFLAGS to default value: -g -O2
+dpkg-buildpackage: set CPPFLAGS to default value: 
+dpkg-buildpackage: set LDFLAGS to default value: -Wl,-Bsymbolic-functions
+dpkg-buildpackage: set FFLAGS to default value: -g -O2
+dpkg-buildpackage: set CXXFLAGS to default value: -g -O2
+dpkg-buildpackage: source package apache-couchdb
+dpkg-buildpackage: source version 1.2.0-0till2~lucidppa
+dpkg-buildpackage: source changed by Till Klampaeckel <till@php.net>
+ fakeroot debian/rules clean
+dh_clean
+	rm -f debian/apache-couchdb.substvars
+	rm -f debian/apache-couchdb.*.debhelper
+	rm -f debian/apache-couchdb.debhelper.log
+	rm -rf debian/apache-couchdb/
+	rm -f debian/files
+	find .  \( \( -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} \; \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} \; \) \)
+	rm -f *-stamp
+dh_testdir
+dh_testroot
+rm -rf debian/apache-couchdb
+ dpkg-source -b apache-couchdb
+dpkg-source: warning: source directory 'apache-couchdb' is not <sourcepackage>-<upstreamversion> 'apache-couchdb-1.2.0'
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building apache-couchdb in apache-couchdb_1.2.0-0till2~lucidppa.tar.gz
+dpkg-source: info: building apache-couchdb in apache-couchdb_1.2.0-0till2~lucidppa.dsc
+ dpkg-genchanges -S >../apache-couchdb_1.2.0-0till2~lucidppa_source.changes
+dpkg-genchanges: including full source code in upload
+dpkg-buildpackage: source only upload: Debian-native package
+Now running lintian...
+W: apache-couchdb source: native-package-with-dash-version
+W: apache-couchdb source: configure-generated-file-in-source config.status
+W: apache-couchdb source: configure-generated-file-in-source config.log
+W: apache-couchdb source: package-lacks-versioned-build-depends-on-debhelper 7
+W: apache-couchdb source: missing-debian-source-format
+W: apache-couchdb source: ancient-standards-version 3.8.3 (current is 3.8.4)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile apache-couchdb_1.2.0-0till2~lucidppa.dsc Till Klampaeckel <till@php.net>
+
+ signfile apache-couchdb_1.2.0-0till2~lucidppa_source.changes Till Klampaeckel <till@php.net>
+
+Successfully signed dsc and changes files

@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 08 Jun 2012 03:20:00 +0200
+Source: apache-couchdb
+Binary: apache-couchdb
+Architecture: source
+Version: 1.2.0-0till2~lucidppa
+Distribution: lucid
+Urgency: medium
+Maintainer: Till Klampaeckel <till@php.net>
+Changed-By: Till Klampaeckel <till@php.net>
+Description: 
+ apache-couchdb - This package provides Apache CouchDB
+Changes: 
+ apache-couchdb (1.2.0-0till2~lucidppa) lucid; urgency=medium
+ .
+   * erlang-nox > erlang-dev
+Checksums-Sha1: 
+ 912eea30a98cff9a6e3bf792d31c4b503b840309 1214 apache-couchdb_1.2.0-0till2~lucidppa.dsc
+ a865fd146adf96afe2d4fd91fbd745550861da04 1488032 apache-couchdb_1.2.0-0till2~lucidppa.tar.gz
+Checksums-Sha256: 
+ 8cda46ea7e2e62bab8fad0cd5f84b0f2a9f3822270858cd8616a9ee4b39ad154 1214 apache-couchdb_1.2.0-0till2~lucidppa.dsc
+ e233a31487a9c9a38db700a8bdfc6a2a3262c9be93558a890001e34bf6ff3bfd 1488032 apache-couchdb_1.2.0-0till2~lucidppa.tar.gz
+Files: 
+ 30aa2d504d7db0492b4864f0d79362a0 1214 database optional apache-couchdb_1.2.0-0till2~lucidppa.dsc
+ 3871c4212073173ca8fd4f0d72531fd1 1488032 database optional apache-couchdb_1.2.0-0till2~lucidppa.tar.gz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAEBAgAGBQJP0VRUAAoJEEmTzUKuWyGJIOkH/jAjgua/WnLWnmn9r3BPOM0Y
+k2Kppuqpk/aVe8CSUST1fTpWNKTMUCgEhTKAFHjlHR5uEj68NU927pb5IBSuYShd
+Heh88YzuumLpaGLiTDCnxF3omkfMXyF43z1lTxyIZxUZ25lp1bEgL8orMUBR3pA7
+QBpY+RZt5LQe2/UNo5vR77g+QnJGqK9MiUCIuvChVEC82podb4WyRbkHemfspgmY
+0GelqLUzawxb528YFg0cS689EBhrF57A6KCcNi8pLRgj9m2dUadxygkSFJ+IhCDM
++HxJZWMgIL3lu/0e0WZzZN/h2XAU4GDiCjXhm9xDlDZMMatpsJ9VbUqF41P7m9E=
+=A4rX
+-----END PGP SIGNATURE-----
