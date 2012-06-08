@@ -12,7 +12,7 @@ fi
 # install packages
 
 apt-get update
-apt-get install -y git-core devscripts fakeroot ssmtp debhelper gnupg python-software-properties
+apt-get install -y git-core devscripts fakeroot ssmtp debhelper gnupg curl python-software-properties
 
 add-apt-repository ppa:till-php/couchdb
 apt-get update
