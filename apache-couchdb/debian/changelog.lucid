@@ -1,0 +1,88 @@
+apache-couchdb (1.2.0-0till13~lucidppa) lucid; urgency=medium
+
+  * trying to fix depends (still)
+
+ -- Till Klampaeckel <till@php.net>  Sat, 09 Jun 2012 18:25:00 +0200
+
+apache-couchdb (1.2.0-0till12~lucidppa) lucid; urgency=medium
+
+  * add erlang-eunit again
+
+ -- Till Klampaeckel <till@php.net>  Sat, 09 Jun 2012 17:30:00 +0200
+
+apache-couchdb (1.2.0-0till11~lucidppa) lucid; urgency=medium
+
+  * adjust erlang dependencies [non-build]
+
+ -- Till Klampaeckel <till@php.net>  Sat, 09 Jun 2012 16:55:00 +0200
+
+apache-couchdb (1.2.0-0till10~lucidppa) lucid; urgency=medium
+
+  * adjust erlang dependencies
+  * test building with various packages which contain xulrunner (prepping for multi-distro builds)
+
+ -- Till Klampaeckel <till@php.net>  Sat, 09 Jun 2012 14:45:00 +0200
+
+apache-couchdb (1.2.0-0till9~lucidppa) lucid; urgency=medium
+
+  * couchdb user needs a shell (init script demands it)
+
+ -- Till Klampaeckel <till@php.net>  Fri, 08 Jun 2012 16:40:00 +0200
+
+apache-couchdb (1.2.0-0till8~lucidppa) lucid; urgency=medium
+
+  * ensures /var/run/couchdb is created and owned by CouchDB
+  * ensures /var/log/couchdb/couch.log is present and writable to CouchDB
+
+ -- Till Klampaeckel <till@php.net>  Fri, 08 Jun 2012 15:35:00 +0200
+
+apache-couchdb (1.2.0-0till7~lucidppa) lucid; urgency=medium
+
+  * added postinst hook script
+  * ensures couchdb user and group are created
+  * ensures log and lib dir are created (and owned by the user)
+
+ -- Till Klampaeckel <till@php.net>  Fri, 08 Jun 2012 13:45:00 +0200
+
+apache-couchdb (1.2.0-0till6~lucidppa) lucid; urgency=medium
+
+  * fix compilation
+
+ -- Till Klampaeckel <till@php.net>  Fri, 08 Jun 2012 12:15:00 +0200
+
+apache-couchdb (1.2.0-0till5~lucidppa) lucid; urgency=medium
+
+  * add eunit
+
+ -- Till Klampaeckel <till@php.net>  Fri, 08 Jun 2012 04:20:00 +0200
+
+apache-couchdb (1.2.0-0till4~lucidppa) lucid; urgency=medium
+
+  * disable help2man
+
+ -- Till Klampaeckel <till@php.net>  Fri, 08 Jun 2012 03:55:00 +0200
+
+apache-couchdb (1.2.0-0till3~lucidppa) lucid; urgency=medium
+
+  * add erlang-crypto
+
+ -- Till Klampaeckel <till@php.net>  Tue, 08 Jun 2012 03:20:00 +0200
+
+apache-couchdb (1.2.0-0till2~lucidppa) lucid; urgency=medium
+
+  * erlang-nox > erlang-dev
+
+ -- Till Klampaeckel <till@php.net>  Tue, 08 Jun 2012 03:20:00 +0200
+
+apache-couchdb (1.2.0-0till1~lucidppa) lucid; urgency=medium
+
+  * libmoz-js is missing, let's try xulrunner instead
+  * erlang > erlang-nox
+
+ -- Till Klampaeckel <till@php.net>  Tue, 08 Jun 2012 03:00:00 +0200
+
+apache-couchdb (1.2.0-0till0~lucidppa) lucid; urgency=medium
+
+  * intial release
+
+ -- Till Klampaeckel <till@php.net>  Tue, 08 Jun 2012 01:00:00 +0200

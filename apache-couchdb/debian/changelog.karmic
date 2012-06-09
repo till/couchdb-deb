@@ -1,0 +1,5 @@
+apache-couchdb (1.2.0-0till0~karmicppa) karmic; urgency=medium
+
+  * initial release for karmic
+
+ -- Till Klampaeckel <till@php.net>  Sat, 09 Jun 2012 18:25:00 +0200

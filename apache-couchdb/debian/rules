@@ -1,0 +1,68 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+PACKAGE_NAME=apache-couchdb
+COUCHDB_PREFIX=/usr/local
+SOURCE_DIR=.
+
+# we install into /usr/local but try to re-use the standard /etc and /var here
+CONFIG_OPTS=--prefix=$(COUCHDB_PREFIX)\
+  --sysconfdir=/etc\
+  --localstatedir=/var\
+  --disable-launchd
+
+DEB_HOST_GNU_TYPE    ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_BUILD_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+DEB_HOST_ARCH   ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
+
+
+COMMON_CONFIG=--build=$(DEB_BUILD_GNU_TYPE) \
+		--host=$(DEB_HOST_GNU_TYPE) 
+
+ifeq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+  CFLAGS += -O2
+else
+  CFLAGS += -O0
+endif
+CFLAGS += -Wall -fsigned-char -fno-strict-aliasing
+
+# Enable IEEE-conformant floating point math on alphas (not the default)
+ifeq (alpha-linux-gnu,$(DEB_HOST_GNU_TYPE))
+  CFLAGS += -mieee
+endif
+
+ifeq ($(DEB_HOST_GNU_TYPE), $(findstring $(DEB_HOST_GNU_TYPE), ia64-linux-gnu powerpc64-linux-gnu avr32-linux-gnu))
+  CFLAGS += -g
+else
+  CFLAGS += -gstabs
+endif
+
+MAKEFLAGS += -j2
+
+prefix=$(COUCHDB_PREFIX)
+
+override_dh_auto_configure:
+	CFLAGS="$(CFLAGS)" ./configure $(COMMON_CONFIG) $(CONFIG_OPTS) 
+
+override_dh_auto_install:
+	#CFLAGS="$(CFLAGS)" $(MAKE) install INSTALL_ROOT=$(CURDIR)/debian/$(PACKAGE_NAME)
+	dh_auto_install -- INSTALL_ROOT=$(CURDIR)/debian/$(PACKAGE_NAME)
+
+override_dh_install:
+	dh_install --sourcedir=debian/$(PACKAGE_NAME)
+
+clean:
+	dh_clean
+	dh_testdir
+	dh_testroot
+	rm -rf debian/$(PACKAGE_NAME)
+
+override_dh_auto_test:
+	#noop
+override_dh_usrlocal:
+	#noop
+
+%:
+	dh $@

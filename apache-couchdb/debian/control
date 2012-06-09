@@ -1,0 +1,23 @@
+Source: apache-couchdb
+Maintainer: Till Klampaeckel <till@php.net>
+Build-Depends: erlang-dev (>= 1:13.b.1-dfsg-3), erlang-crypto,
+ erlang-inets, erlang-xmerl, erlang-eunit, libicu-dev,
+ xulrunner-1.9.2-dev | xulrunner-1.9.2 | libmozjs-dev,
+ libcurl4-openssl-dev,
+ autoconf, automake, debhelper (>= 7.2.11)
+Homepage: http://couchdb.apache.org
+Section: database
+Priority: optional
+Standards-Version: 3.8.4
+
+Package: apache-couchdb
+Architecture: any
+Conflicts: couchdb
+Provides: couchdb
+Depends: ${misc:Depends}, ${shlibs:Depends},
+ ${erlang-base:Depends},  ${erlang-crypto:Depends}, ${erlang-eunit:Depends},
+ ${erlang-inets:Depends}, ${erlang-xmerl:Depends}, ${erlang-abi:Depends},
+ erlang,
+ adduser, libjs-jquery, lsb-base,
+ ${xulrunner:Depends}
+Description: This package provides Apache CouchDB
