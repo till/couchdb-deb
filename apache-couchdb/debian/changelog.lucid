@@ -1,3 +1,9 @@
+apache-couchdb (1.2.0-0till14~lucidppa) lucid; urgency=medium
+
+  * less explicit dep on erlang-dev
+
+ -- Till Klampaeckel <till@php.net>  Sat, 09 Jun 2012 21:30:00 +0200
+
 apache-couchdb (1.2.0-0till13~lucidppa) lucid; urgency=medium
 
   * trying to fix depends (still)

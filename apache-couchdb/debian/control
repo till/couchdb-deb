@@ -1,6 +1,6 @@
 Source: apache-couchdb
 Maintainer: Till Klampaeckel <till@php.net>
-Build-Depends: erlang-dev (>= 1:13.b.1-dfsg-3), erlang-crypto,
+Build-Depends: erlang-dev, erlang-crypto,
  erlang-inets, erlang-xmerl, erlang-eunit, libicu-dev,
  xulrunner-1.9.2-dev | xulrunner-1.9.2 | libmozjs-dev,
  libcurl4-openssl-dev,

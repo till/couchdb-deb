@@ -1,3 +1,15 @@
+apache-couchdb (1.2.0-0till2~karmicppa) karmic; urgency=medium
+
+  * less explicit dep on erlang-dev
+
+ -- Till Klampaeckel <till@php.net>  Sat, 09 Jun 2012 21:30:00 +0200
+
+apache-couchdb (1.2.0-0till1~karmicppa) karmic; urgency=medium
+
+  * fix symlink issue in build
+
+ -- Till Klampaeckel <till@php.net>  Sat, 09 Jun 2012 21:08:00 +0200
+
 apache-couchdb (1.2.0-0till0~karmicppa) karmic; urgency=medium
 
   * initial release for karmic
