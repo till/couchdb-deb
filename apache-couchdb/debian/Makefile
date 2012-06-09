@@ -5,6 +5,6 @@ all:
 
 karmic lucid maverick:
 
-	ln -f changelog.$@ changelog
+	cp changelog.$@ changelog
 	$(MAKE)
-	rm -f changelog
+	rm changelog
