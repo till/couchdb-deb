@@ -3,8 +3,10 @@
 
 Vagrant::Config.run do |config|
 
-  config.vm.box = "lucid64"
-  config.vm.network :hostonly, "133.0.0.108"
+  config.vm.box     = "lucid64"
+  config.vm.box_url = "http://files.vagrantup.com/lucid64.box"
+
+  config.vm.network :hostonly, "33.33.33.254"
 
   #config.vm.boot_mode = :gui
 
