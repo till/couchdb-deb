@@ -13,7 +13,8 @@ Vagrant::Config.run do |config|
   # link keys into VM
   config.vm.share_folder("v-root", "/home/vagrant/.gnupg", "#{ENV['HOME']}/.gnupg", :nfs => false)
 
-  # current dir into ~/buildbox
-  config.vm.share_folder("v-package", "/home/vagrant/buildbox", ".", :nfs => false)
+  # current dir into ~/buildbox and allow symlinks
+  config.vm.share_folder("v-buildbox", "/home/vagrant/buildbox", ".", :nfs => false)
+  config.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-buildbox", "1"]
 
 end
