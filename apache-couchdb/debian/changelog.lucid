@@ -1,3 +1,9 @@
+apache-couchdb (1.2.0-0till24~lucidppa) lucid; urgency=medium
+
+  * install xulrunner
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 20:35:00 +0200
+
 apache-couchdb (1.2.0-0till23~lucidppa) lucid; urgency=medium
 
   * fixed ifeq statement (indention is not allowed)

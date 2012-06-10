@@ -20,5 +20,5 @@ Depends: ${misc:Depends}, ${shlibs:Depends},
  ${erlang-inets:Depends}, ${erlang-xmerl:Depends}, ${erlang-abi:Depends},
  erlang,
  adduser, libjs-jquery, lsb-base,
- ${xulrunner:Depends}
+ ${xulrunner:Depends}, xulrunner
 Description: This package provides Apache CouchDB
