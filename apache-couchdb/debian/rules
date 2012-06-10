@@ -3,6 +3,8 @@
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
+DIST:=$(shell lsb_release -cs)
+
 PACKAGE_NAME=apache-couchdb
 COUCHDB_PREFIX=/usr
 SOURCE_DIR=.
