@@ -1,3 +1,9 @@
+apache-couchdb (1.2.0-0till25~lucidppa) lucid; urgency=medium
+
+  * improve xulrunner depends
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 21:33:00 +0200
+
 apache-couchdb (1.2.0-0till24~lucidppa) lucid; urgency=medium
 
   * install xulrunner
