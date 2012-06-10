@@ -19,6 +19,8 @@ case "$1" in
 	LOG_DIR="/var/log/${SERVICE}"
 	DATA_DIR="/var/lib/${SERVICE}"
 	RUN_DIR="/var/run/${SERVICE}"
+	UBUNTU_DIST=$(lsb_release -cs)
+	XUL_CONF=/etc/ld.so.conf.d/xulrunner.conf
 
 	echo "Adding CouchDB user"
 	adduser --system --disabled-password --shell /bin/sh --group --home "${RUN_DIR}" --gecos "Apache CouchDB daemon" $COUCHDB_USER
@@ -35,6 +37,19 @@ case "$1" in
 	echo "Ensuring ${DATA_DIR} is present and owned by ${SERVICE}"
 	test -d $DATA_DIR || mkdir $DATA_DIR
 	chown -R $COUCHDB_USER $DATA_DIR
+
+	if [ ! -f $XUL_CONF ]; then
+		exit 0
+	fi
+
+	if [ "$UBUNTU_DIST" = "lucid" ]; then
+		echo "Fixing xulrunner!"
+		XUL_VERSION=$(xulrunner -gre-version)
+		echo "/usr/lib/xulrunner-${XUL_VERSION}
+/usr/lib/xulrunner-devel-${XUL_VERSION}" > $XUL_CONF
+		/sbin/ldconfig
+	fi
+
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;
