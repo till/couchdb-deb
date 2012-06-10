@@ -1,3 +1,9 @@
+apache-couchdb (1.2.0-0till1~nattyppa) natty; urgency=medium
+
+  * fixed dependencies!
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 21:00:00 +0200
+
 apache-couchdb (1.2.0-0till0~nattyppa) natty; urgency=medium
 
   * initial release for Natty N.. something?!

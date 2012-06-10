@@ -1,3 +1,10 @@
+apache-couchdb (1.2.0-0till26~lucidppa) lucid; urgency=medium
+
+  * remove dependency (since we figured out a way around it)
+  * source: http://wiki.apache.org/couchdb/Installing_on_Ubuntu
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 21:53:00 +0200
+
 apache-couchdb (1.2.0-0till25~lucidppa) lucid; urgency=medium
 
   * improve xulrunner depends
