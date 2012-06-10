@@ -1,1 +1,7 @@
 .vagrant
+*.dsc
+*.tar.gz
+*.build
+*.changes
+*.ppa.upload
+
