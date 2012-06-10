@@ -1,3 +1,9 @@
+apache-couchdb (1.2.0-0till16~lucidppa) lucid; urgency=medium
+
+  * also replace couchdb-bin
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 15:05:00 +0200
+
 apache-couchdb (1.2.0-0till15~lucidppa) lucid; urgency=medium
 
   * switch to /usr                 
