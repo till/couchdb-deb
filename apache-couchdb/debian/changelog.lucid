@@ -1,3 +1,22 @@
+apache-couchdb (1.2.0-0till19~lucidppa) lucid; urgency=medium
+
+  * repost of the previous (bugfixing debian/rules)
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 17:55:00 +0200
+
+apache-couchdb (1.2.0-0till18~lucidppa) lucid; urgency=medium
+
+  * testing automated xulrunner fix
+  * fixed bug i introduced into debian/rules (MAKE IS HARD)
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 17:40:00 +0200
+
+apache-couchdb (1.2.0-0till17~lucidppa) lucid; urgency=medium
+
+  * fix xulrunner setup
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 17:25:00 +0200
+
 apache-couchdb (1.2.0-0till16~lucidppa) lucid; urgency=medium
 
   * also replace couchdb-bin
