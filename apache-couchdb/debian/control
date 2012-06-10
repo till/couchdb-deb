@@ -4,7 +4,7 @@ Build-Depends: erlang-dev, erlang-crypto,
  erlang-inets, erlang-xmerl, erlang-eunit, libicu-dev,
  xulrunner-1.9.2-dev | xulrunner-1.9.2 | libmozjs-dev,
  libcurl4-openssl-dev,
- autoconf, automake, debhelper (>= 7.2.11)
+ autoconf, automake, debhelper (>= 7.2.11), lsb-release
 Homepage: http://couchdb.apache.org
 Section: database
 Priority: optional
