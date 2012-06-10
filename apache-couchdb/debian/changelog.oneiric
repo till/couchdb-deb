@@ -1,0 +1,5 @@
+apache-couchdb (1.2.0-0till0~oneiricppa) oneiric; urgency=medium
+
+  * initial release for Oneiric Ocelot
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 15:35:00 +0200
