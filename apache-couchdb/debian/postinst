@@ -44,7 +44,7 @@ case "$1" in
 
 	if [ "$DIST" = "lucid" ]; then
 		echo "Fixing xulrunner!"
-		XUL_VERSION=$(xulrunner -gre-version)
+		XUL_VERSION=$(find /usr/lib -maxdepth 1 -type d -name "xulrunner-*"|grep -v addons| tr -d '/usr/lib/xulrunner-')
 		echo "/usr/lib/xulrunner-${XUL_VERSION}
 /usr/lib/xulrunner-devel-${XUL_VERSION}" > $XUL_CONF
 		/sbin/ldconfig
