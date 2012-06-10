@@ -1,3 +1,9 @@
+apache-couchdb (1.2.0-0till15~lucidppa) lucid; urgency=medium
+
+  * switch to /usr                 
+
+ -- Till Klampaeckel <till@php.net>  Sun, 10 Jun 2012 14:45:00 +0200
+
 apache-couchdb (1.2.0-0till14~lucidppa) lucid; urgency=medium
 
   * less explicit dep on erlang-dev
