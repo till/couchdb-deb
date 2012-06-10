@@ -19,7 +19,7 @@ case "$1" in
 	LOG_DIR="/var/log/${SERVICE}"
 	DATA_DIR="/var/lib/${SERVICE}"
 	RUN_DIR="/var/run/${SERVICE}"
-	UBUNTU_DIST=$(lsb_release -cs)
+	DIST=$(lsb_release -cs)
 	XUL_CONF=/etc/ld.so.conf.d/xulrunner.conf
 
 	echo "Adding CouchDB user"
@@ -42,7 +42,7 @@ case "$1" in
 		exit 0
 	fi
 
-	if [ "$UBUNTU_DIST" = "lucid" ]; then
+	if [ "$DIST" = "lucid" ]; then
 		echo "Fixing xulrunner!"
 		XUL_VERSION=$(xulrunner -gre-version)
 		echo "/usr/lib/xulrunner-${XUL_VERSION}
