@@ -1,3 +1,9 @@
+apache-couchdb (1.2.0-0till2~nattyppa) natty; urgency=medium
+
+  * rebuild with latest control file
+
+ -- Till Klampaeckel <till@php.net>  Mon, 11 Jun 2012 16:05:00 +0200
+
 apache-couchdb (1.2.0-0till1~nattyppa) natty; urgency=medium
 
   * fixed dependencies!
