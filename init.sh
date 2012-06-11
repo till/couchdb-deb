@@ -16,3 +16,6 @@ apt-get install -y git-core devscripts fakeroot ssmtp debhelper gnupg curl pytho
 
 add-apt-repository ppa:till-php/couchdb
 apt-get update
+
+# setup dput for me
+ln -s ./buildbox/dput.cf ./.dput.cf

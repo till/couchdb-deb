@@ -1,0 +1,6 @@
+[couchdb]
+fqdn = ppa.launchpad.net
+method = ftp
+incoming = ~till-php/couchdb
+login = anonymous
+allow_unsigned_uploads = 0
