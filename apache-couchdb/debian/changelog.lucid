@@ -1,3 +1,10 @@
+apache-couchdb (1.2.0-0till27~lucidppa) lucid; urgency=medium
+
+  * add xulrunner and hopefully meet all series
+  * source: http://wiki.apache.org/couchdb/Installing_on_Ubuntu
+
+ -- Till Klampaeckel <till@php.net>  Mon, 11 Jun 2012 02:00:00 +0200
+
 apache-couchdb (1.2.0-0till26~lucidppa) lucid; urgency=medium
 
   * remove dependency (since we figured out a way around it)
