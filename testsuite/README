@@ -1,0 +1,37 @@
+
+License
+=======
+Apache 2 (I suppose)
+
+
+Prerequisite
+============
+1. BASH + AWK
+2. GNU gcc which accepts -g -O2 options
+3. Erlang
+4. prove
+
+
+Usage
+=====
+Modify test.cfg to be the correct paths. Variables are:
+
+COUCHDB_TEST_ETAP_PATH - It's the path toward the tests. E.g., "/home/couchdb/couchdb_etap/tests"
+COUCHDB_TEST_PATH - It's the path from PREFIX. E.g., "/usr/local"
+COUCHDB_TEST_LIB_PATH - It's the relative path toward the CouchDB library directory. E.g., "lib/couchdb"
+COUCHDB_TEST_ETC_PATH - It's the relative path toward the CouchDB etc directory. E.g., "etc/couchdb"
+COUCHDB_TEST_SHARE_PATH - It's the relative path toward the CouchDB share directory. E.g., "share/couchdb"
+COUCHDB_TEST_VARLIB_PATH - It's the relative path toward the CouchDB varlib directory. E.g., "var/lib/couchdb"
+COUCHDB_TEST_EXTRA - It's the relative path from COUCHDB_TEST_LIB_PATH toward the CouchDB library directory. E.g., "erlang/lib"
+COUCHDB_TEST_VERSION - It's the CouchDB library directory suffix. E.g., "-1.2.0"
+COUCHDB_TEST_ETAP_VERSION - It's the ETap library directory suffix (installed in CouchDB). E.g., ""
+COUCHDB_TEST_EJSON_VERSION - It's the EJSON library directory suffix. E.g., "-0.1.0"
+COUCHDB_TEST_ERLANG_OAUTH_VERSION - It's the Erlang OAuth library directory suffix. E.g., ""
+COUCHDB_TEST_IBROWSE_VERSION - It's the iBrowse library directory suffix. E.g., "-2.2.0"
+COUCHDB_TEST_MOCHIWEB_VERSION - It's the Mochiweb library directory suffix. E.g., "-1.4.1"
+COUCHDB_TEST_SNAPPY_VERSION - It's the Snappy library directory suffix. E.g., "-1.0.3"
+COUCHDB_TEST_EBIN - It's the location of the .beam files. E.g., "ebin"
+
+Execute the command sudo ./test.sh
+
+That's all.
